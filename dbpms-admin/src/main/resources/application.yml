@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql:///dbpms?serverTimezone=GMT%2B8&characterEncoding=utf8
+    username: root
+    password: mysql123
+  aop:
+    proxy-target-class: false
+
+mybatis:
+  mapper-locations: classpath:/mapper/*/*.xml
+logging:
+  level:
+    com.cy: debug
